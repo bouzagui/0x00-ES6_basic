@@ -9,7 +9,7 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
         res.map(({ status, value, reason }) => {
           result.push({
             status,
-            value: status === 'rejected' ? reason.toString() : value.body,
+            value: status === 'rejected' ? reason.toString() : value,
           })
     });
     return result;
